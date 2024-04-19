@@ -1,4 +1,5 @@
 # Etch-a-Sketch
-A JS project
 
 Work in progress
+
+A JS project
