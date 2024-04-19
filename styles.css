@@ -1,9 +1,10 @@
 #container {
     display: flex;
     flex-wrap: wrap;
+    width: 600px;
 }
 
 #container div {
     border: 2px solid black;
-    padding: 10px;
+    padding: 60px;
 }
