@@ -5,10 +5,14 @@ let sizeSettingText = document.createElement("p");
 formContainer.appendChild(sizeSettingText);
 sizeSettingText.textContent = "New grid size: ";
 let sizeSettingInput = document.createElement("input");
+sizeSettingInput.setAttribute("placeholder", "Enter Grid Size");
 formContainer.appendChild(sizeSettingInput);
 let submitButton = document.createElement("button");
 formContainer.appendChild(submitButton);
 submitButton.textContent = "Submit";
+submitButton.addEventListener("click", () => {
+    
+})
 
 
 
