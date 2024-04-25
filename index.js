@@ -25,6 +25,7 @@ function replicateInput() {
 
 function makeGrid() {
     let enteredInput = sizeSettingInput.value;
+    gridContainer.textContent = "";
 
     if (enteredInput < 0 || enteredInput > 99 || isNaN(enteredInput)){
         // Enter code here
