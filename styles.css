@@ -12,13 +12,14 @@ body {
 }
 
 .row {
-    border: 2px solid black;
+    border: 1px solid black;
     display: flex;
     flex: 1;
     /* flex-direction is set to row by default. Crucial here that it's used in tandem with its parent container's column layout. */
+    margin-bottom: -1px; /* Rid double border on horizontal borders */
 }
 
 .column {
-    border: 2px solid black;
+    border: 1px solid black;
     flex: 1;
 }
