@@ -39,17 +39,11 @@ function makeGrid() {
                 let column = document.createElement("div");
                 column.classList.add("column");
                 row.appendChild(column);
+
+                column.addEventListener("mouseover", () => {
+                    column.style.backgroundColor = "blue";
+                })
             }
         }
     }
-}
-
-
-
-// for (let i=0; i<16; i++) {
-//     let aDiv = document.createElement("div");
-//     gridContainer.appendChild(aDiv);
-//     aDiv.addEventListener("mouseover", () => {
-//         aDiv.style.backgroundColor = "blue";
-//     })
-// }
+};
