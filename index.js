@@ -18,7 +18,7 @@ submitButton.addEventListener("mouseenter", () => { submitButton.style.backgroun
 submitButton.addEventListener("mouseleave", () => { submitButton.style.backgroundColor = "white";}); //Hover effect to submit button.
 sizeSettingInput.addEventListener("keyup", replicateInput)
 
-// <div id="form-explanation">
+// <div id="prompt">
 let promptContainer = document.querySelector("#prompt");
 let promptText = document.createElement("p");
 promptText.textContent = "Enter a number between 2 and 99";
