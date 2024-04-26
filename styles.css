@@ -1,8 +1,16 @@
 body {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
+    min-height: 900px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#form {
+    display: flex;
+    justify-content: space-evenly;
+    width: 400px;
 }
 
 #container {
