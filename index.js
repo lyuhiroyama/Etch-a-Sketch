@@ -36,10 +36,26 @@ function makeGrid() {
     let enteredInput = sizeSettingInput.value;
     gridContainer.textContent = "";
 
-    if (enteredInput < 0 || enteredInput > 99 || isNaN(enteredInput)){
+    if (enteredInput < 0 || enteredInput > 99 || isNaN(enteredInput) || enteredInput == ""){
         // Default grid layout:
-    } else {
 
+        for (let i=0; i < 10; i++) {
+            let row = document.createElement("div");
+            row.classList.add("row");
+            gridContainer.appendChild(row);
+            
+            for (let j=0; j < 10; j++) {
+                let column = document.createElement("div");
+                column.classList.add("column");
+                row.appendChild(column);
+
+                column.addEventListener("mouseover", () => {
+                    column.style.backgroundColor = "blue";
+                })
+            }
+        }
+
+    } else {
         // Creating new grid based on user input:
 
         for (let i=0; i < enteredInput; i++) {
@@ -59,3 +75,6 @@ function makeGrid() {
         }
     }
 };
+
+//Run makeGrid function on page load to make default 10x10 grid
+makeGrid();
