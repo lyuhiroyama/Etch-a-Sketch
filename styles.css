@@ -3,8 +3,9 @@ body {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    min-height: 900px;
+    min-height: 919px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background: linear-gradient(#f3f1f1, #91a685);
 }
 
 #form {
