@@ -1,4 +1,4 @@
-// form div
+// <div id="#form">
 let formContainer = document.querySelector("#form");
 
 let sizeSettingText = document.createElement("p");
@@ -14,8 +14,17 @@ formContainer.appendChild(submitButton);
 submitButton.textContent = "Submit";
 
 submitButton.addEventListener("click", makeGrid);
+submitButton.addEventListener("mouseenter", () => { submitButton.style.backgroundColor = "#ababab";}); //Hover effect to submit button.
+submitButton.addEventListener("mouseleave", () => { submitButton.style.backgroundColor = "white";}); //Hover effect to submit button.
 sizeSettingInput.addEventListener("keyup", replicateInput)
-// container div
+
+// <div id="form-explanation">
+let promptContainer = document.querySelector("#prompt");
+let promptText = document.createElement("p");
+promptText.textContent = "Enter a number between 2 and 99";
+promptContainer.appendChild(promptText);
+
+// <div id="#container">
 let gridContainer = document.querySelector("#container");
 
 function replicateInput() {
@@ -28,8 +37,11 @@ function makeGrid() {
     gridContainer.textContent = "";
 
     if (enteredInput < 0 || enteredInput > 99 || isNaN(enteredInput)){
-        // Enter code here
+        // Default grid layout:
     } else {
+
+        // Creating new grid based on user input:
+
         for (let i=0; i < enteredInput; i++) {
             let row = document.createElement("div");
             row.classList.add("row");
